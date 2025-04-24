@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Baburam’s HTML Cheat Sheet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>HTML Cheat Sheet</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="hobby.html">Hobbies</a>
+      <a href="html-cheatsheet.html">HTML Cheat Sheet</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. <html> -->
+    <section class="cheat-card">
+      <h2>&lt;html&gt;</h2>
+      <p>
+        The <code>&lt;html&gt;</code> element is the root container for an HTML document. Everything you want the browser to render—headings, paragraphs, images, scripts—must be nested inside this element. It declares the start and end of an HTML page and globally defines the document’s language and metadata scope.
+      </p>
+    </section>
+
+    <!-- 2. <head> -->
+    <section class="cheat-card">
+      <h2>&lt;head&gt;</h2>
+      <p>
+        The <code>&lt;head&gt;</code> element holds metadata—like the page title, character encoding, stylesheet links, and scripts—that doesn’t display directly on the page. Browsers use this information to properly render and index your site, making it critical for performance, SEO, and linking external resources.
+      </p>
+    </section>
+
+    <!-- 3. <title> -->
+    <section class="cheat-card">
+      <h2>&lt;title&gt;</h2>
+      <p>
+        Placed inside the <code>&lt;head&gt;</code>, the <code>&lt;title&gt;</code> element sets the text shown in the browser tab and search engine results. It should be concise yet descriptive, helping users and crawlers understand the page’s main topic at a glance for usability and SEO.
+      </p>
+    </section>
+
+    <!-- 4. <body> -->
+    <section class="cheat-card">
+      <h2>&lt;body&gt;</h2>
+      <p>
+        The <code>&lt;body&gt;</code> element wraps all visible webpage content—headings, paragraphs, images, links, and user interface elements. It defines the main document structure that browsers render. Anything you want the visitor to see or interact with must live inside this container.
+      </p>
+    </section>
+
+    <!-- 5. <h1> to <h6> -->
+    <section class="cheat-card">
+      <h2>&lt;h1&gt;–&lt;h6&gt;</h2>
+      <p>
+        Heading tags (<code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>) define section titles in descending importance. Search engines and screen readers use them to understand page structure. Use one <code>&lt;h1&gt;</code> per page for the main title, and nest smaller headings logically for subsections.
+      </p>
+    </section>
+
+    <!-- 6. <p> -->
+    <section class="cheat-card">
+      <h2>&lt;p&gt;</h2>
+      <p>
+        The paragraph tag (<code>&lt;p&gt;</code>) defines a block of text, automatically adding space before and after for readability. It’s ideal for sentences and short blocks of content. Don’t use it for layout—keep it strictly for meaningful text.
+      </p>
+    </section>
+
+    <!-- 7. <a> + href + target -->
+    <section class="cheat-card">
+      <h2>&lt;a&gt; (href, target)</h2>
+      <p>
+        The anchor tag (<code>&lt;a&gt;</code>) creates hyperlinks. The <code>href</code> attribute specifies the destination URL. Use <code>target="_blank"</code> to open links in a new tab, and <code>rel="noopener"</code> for security. Anchors allow navigation within and between sites.
+      </p>
+    </section>
+
+    <!-- 8. <img> + src + alt -->
+    <section class="cheat-card">
+      <h2>&lt;img&gt; (src, alt)</h2>
+      <p>
+        The image tag (<code>&lt;img&gt;</code>) embeds pictures. Use the <code>src</code> attribute for the file path and <code>alt</code> text to describe images for accessibility and SEO. Always provide meaningful alt text to support non-visual browsing and improve indexing.
+      </p>
+    </section>
+
+    <!-- 9. <ul>, <ol>, <li> -->
+    <section class="cheat-card">
+      <h2>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</h2>
+      <p>
+        Unordered (<code>&lt;ul&gt;</code>) and ordered (<code>&lt;ol&gt;</code>) lists organize items. Each item goes in an <code>&lt;li&gt;</code>. Use lists for navigation menus, steps, and bullet points. They improve scannability and semantics compared to manually styled paragraphs.
+      </p>
+    </section>
+
+    <!-- 10. <table>, <tr>, <td>, <th> -->
+    <section class="cheat-card">
+      <h2>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</h2>
+      <p>
+        Table elements structure tabular data. <code>&lt;table&gt;</code> contains rows (<code>&lt;tr&gt;</code>), which hold cells: data cells (<code>&lt;td&gt;</code>) and header cells (<code>&lt;th&gt;</code>). Use captions and summaries for accessibility and clear data presentation.
+      </p>
+    </section>
+
+    <!-- 11. <form> + action + method -->
+    <section class="cheat-card">
+      <h2>&lt;form&gt; (action, method)</h2>
+      <p>
+        The <code>&lt;form&gt;</code> tag wraps input controls to submit data. <code>action</code> defines the server endpoint, and <code>method</code> specifies GET or POST. Forms power login pages, surveys, and contact forms—fundamental for interactive sites.
+      </p>
+    </section>
+
+    <!-- 12. <input> + type + placeholder -->
+    <section class="cheat-card">
+      <h2>&lt;input&gt; (type, placeholder)</h2>
+      <p>
+        The <code>&lt;input&gt;</code> tag creates form controls—text fields, passwords, radios, checkboxes. The <code>type</code> attribute defines control behavior, and <code>placeholder</code> offers hint text inside empty inputs to guide users on required format or content.
+      </p>
+    </section>
+
+    <!-- 13. <button> -->
+    <section class="cheat-card">
+      <h2>&lt;button&gt;</h2>
+      <p>
+        Buttons (<code>&lt;button&gt;</code>) submit or reset forms (<code>type="submit"</code> / <code>type="reset"</code>) or trigger JavaScript (<code>type="button"</code>). Unlike <code>&lt;input&gt;</code>, they can contain HTML content, making them more flexible for styled interactive controls.
+      </p>
+    </section>
+
+    <!-- 14. <section>, <article>, <aside> -->
+    <section class="cheat-card">
+      <h2>&lt;section&gt;, &lt;article&gt;, &lt;aside&gt;</h2>
+      <p>
+        Semantic tags improve document structure: <code>&lt;section&gt;</code> groups related content, <code>&lt;article&gt;</code> encapsulates self-contained content (e.g., blog post), and <code>&lt;aside&gt;</code> holds tangential content like sidebars. They boost accessibility and SEO.
+      </p>
+    </section>
+
+    <!-- 15. class, id, style -->
+    <section class="cheat-card">
+      <h2>Attributes: class, id, style</h2>
+      <p>
+        <strong>class</strong> groups elements for CSS/JS targeting; <strong>id</strong> uniquely identifies one element; <strong>style</strong> applies inline CSS rules directly. Use classes for reusable styles, IDs for single elements, and inline only sparingly.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Baburam Mallah</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
